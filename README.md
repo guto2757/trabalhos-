@@ -1,24 +1,20 @@
 # trabalhos-
-using System;
-
 class Program
 {
     static void Main()
     {
-        Console.Write("Digite sua idade: ");
-        int idade = int.Parse(Console.ReadLine());
+        int[] numeros = new int[7];
 
-        if (idade < 12)
+        for (int i = 0; i < 7; i++)
         {
-            Console.WriteLine("Você é Criança.");
+            Console.Write($"Digite o {i + 1}º número inteiro: ");
+            numeros[i] = int.Parse(Console.ReadLine());
         }
-        else if (idade >= 12 && idade <= 17)
+
+        Console.WriteLine("\nNúmeros na ordem inversa:");
+        for (int i = 6; i >= 0; i--)
         {
-            Console.WriteLine("Você é Adolescente.");
-        }
-        else
-        {
-            Console.WriteLine("Você é Adulto.");
+            Console.WriteLine(numeros[i]);
         }
     }
 }
