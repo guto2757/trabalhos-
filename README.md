@@ -5,12 +5,20 @@ class Program
 {
     static void Main()
     {
-        double a = 0.1;
-        double b = 0.2;
-        double soma = a + b;
-        double comparacao = 0.3;
+        Console.Write("Digite sua idade: ");
+        int idade = int.Parse(Console.ReadLine());
 
-        Console.WriteLine($"0.1 + 0.2 = {soma}");
-        Console.WriteLine($"Comparação com 0.3: {soma == comparacao}");
-}
+        if (idade < 12)
+        {
+            Console.WriteLine("Você é Criança.");
+        }
+        else if (idade >= 12 && idade <= 17)
+        {
+            Console.WriteLine("Você é Adolescente.");
+        }
+        else
+        {
+            Console.WriteLine("Você é Adulto.");
+        }
+    }
 }
