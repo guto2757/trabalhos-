@@ -12,5 +12,5 @@ class Program
 
         Console.WriteLine($"0.1 + 0.2 = {soma}");
         Console.WriteLine($"Comparação com 0.3: {soma == comparacao}");
-    }
+}
 }
