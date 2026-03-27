@@ -1,16 +1,30 @@
 # trabalhos-
-using System;
+import 'package:flutter/material.dart';
 
-class Program
-{
-    static void Main()
-    {
-        // Variável string declarada
-        string nome;
+void main() {
+  runApp(MeuApp());
+}
 
-        // Inicializa antes do uso — evita warning
-        nome = "Usuário";
-
-        Console.WriteLine($"Olá, {nome}!");
-    }
+class MeuApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'App teste com fluter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Testando App'),
+        ),
+        body: Center(
+          child: Text(
+            'Teste executado',
+            style: TextStyle(fontSize: 18),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.add),
+        ),
+      ),
+    );
+  }
 }
